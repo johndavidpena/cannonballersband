@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import appStyles from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className={appStyles.app}>
+      <header className={appStyles.header}>
+        <h1 className={appStyles.title}>cannonballers</h1>
+        <p className={appStyles.subtitle}>nerd jam band</p>
       </header>
+
+      <main className={appStyles.main}>
+        <section className={appStyles.section}>
+          <h2>Elements</h2>
+          <p>Catchy, fun, nerdy melodies</p>
+          <p>Meaningful, well-crafted arrangements</p>
+          <p>Danceable grooves</p>
+        </section>
+        <section className={appStyles.section}>
+          <h2>Tunes</h2>
+          <p>Games of Thrones</p>
+        </section>
+      </main>
     </div>
   );
 }
